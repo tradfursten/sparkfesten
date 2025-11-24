@@ -1,0 +1,37 @@
+.logo-container {
+    text-align: center;
+}
+
+body { 
+    box-sizing: border-box; 
+    min-height: 1vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main {
+    flex: 1 0 auto
+}
+
+body > footer {
+    flex-shrink: 0;
+}
+
+.footer_leaf {
+    max-width: 600px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.center {
+    text-align: center; 
+}
+
+.hero {
+    margin-top: 2rem;
+}

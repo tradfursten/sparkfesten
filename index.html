@@ -1,0 +1,88 @@
+<html lang="sv" data-theme="light">
+	<head>
+	   <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="/css/custom.css" />
+	    <link rel="stylesheet" href="/css/pico.min.css" />
+	    <link rel="stylesheet" href="/css/pico.amber.min.css" />
+	    <title>Sparkfesten 2026</title>
+	</head>
+	<body>
+		<header class="container">
+		</header>
+		<main class="container">
+		    <img style="width:200px;" src="gröna sparkar.png" align="left"/>
+			<div class="container hero">
+				<div class="center">
+					<h1>Sävar sparkfest 2026</h1>
+					<p>&nbsp;<strong id="time"></strong></p>
+				</div>
+				<p>
+				Det är nu hög tid att anmäla er till 2026 års upplaga av Sparkfesten i Sävar!
+				Det finns ett begränsat antal platser så vänta inte för länge! Först till kvarn!
+				Info kring hur anmälan sker finns i inbjudan.
+				</p>
+				<p>
+				Just nu finns det <strong>75</strong> platser kvar! (Uppdateras tyyyp varje kväll)
+				<p>
+				<h2>Hur funkar det?</h2>
+				<p>
+				Alla som anmält sig kommer få bjuda på antingen förrätt, varmrätt eller efterrätt.
+                Vilken av dessa rätter man ska laga får man veta några veckor innan eventet.
+                Ni kommer alltså ta emot mellan 4-6 gäster och bjuda dessa på mat. Till de andra två rätterna kommer ni få sparka hem till helt andra personer. Kanske början på en ny vänskap :)
+				</p>
+
+                <img style="width:200px;" src="gula sparkar.png" align="right"/>
+				<h2>Klädkod</h2>
+				<p>
+				I år har sparkfesten färgtema. Varje par väljer själva en färg som ni klär er i. Vi hoppas ni går all-in!
+				</p>
+
+				<h2>Specialkost</h2>
+				<p>
+				Maila oss på <a href="mailto:info@sparkfesten.se">info@sparkfesten.se</a> i samband med anmälan om du/ni behöver någon specialkost.
+				</p>
+
+
+				<h2>Övriga frågor</h2>
+				<p>
+				Ni kan nå oss via mailen info@sparkfesten.se om ni har några frågor eller funderingar.
+				</p>
+
+				<p>
+				<strong>Hoppas vi ses!</strong>
+				</p>
+				<img style="height:200px;" src="lila sparkar.png" align="middle"/>
+		</main>
+		<script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 7, 2026 16:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("time").innerHTML = (days > 0 ? days + " dagar " :"") + (hours > 0? hours + " timmar ": "")
+            + (minutes > 0? minutes + " minuter ": "") + (seconds > 0? seconds + " sekunder" :"");
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("time").innerHTML = "För sent!";
+          }
+        }, 1000);
+        </script>
+	</body>
+</html>
